@@ -36,18 +36,6 @@ def Problem12():
             m.addConstr(y_B[k]-y_O[k]+x_SH == d[k])
         
         m.optimize()
-                
-        # print('x_SH:',x_SH.x)
-        
-        # print('y_B:')
-        # for k in range(K):
-        #     print(y_B[k].x)
-            
-        # print('y_O:')
-        # for k in range(K):
-        #     print(y_O[k].x)
-            
-        # print('z_k',m.getObjective().getValue())
         
         z_K.append(m.getObjective().getValue())
     

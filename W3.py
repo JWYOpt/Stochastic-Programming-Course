@@ -41,7 +41,7 @@ def Problem12():
         z_K.append(m.getObjective().getValue())
     
     
-    z_K = [111.9,119.4,107.8,112.5,111.5,121.2,117.1]
+    
     L_MK = sum(z_K)/M
     
     
